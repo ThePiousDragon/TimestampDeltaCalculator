@@ -11,6 +11,7 @@
 		43E645052953236800EAE968 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E645042953236800EAE968 /* ContentView.swift */; };
 		43E645072953236900EAE968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E645062953236900EAE968 /* Assets.xcassets */; };
 		43E6450A2953236900EAE968 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E645092953236900EAE968 /* Preview Assets.xcassets */; };
+		43E645122953238600EAE968 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E645112953238600EAE968 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		43E645062953236900EAE968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E645092953236900EAE968 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43E6450B2953236900EAE968 /* TimestampDeltaCalculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimestampDeltaCalculator.entitlements; sourceTree = "<group>"; };
+		43E645112953238600EAE968 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				43E645022953236800EAE968 /* TimestampDeltaCalculatorApp.swift */,
 				43E645042953236800EAE968 /* ContentView.swift */,
+				43E645112953238600EAE968 /* Calculator.swift */,
 				43E645062953236900EAE968 /* Assets.xcassets */,
 				43E6450B2953236900EAE968 /* TimestampDeltaCalculator.entitlements */,
 				43E645082953236900EAE968 /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				43E645052953236800EAE968 /* ContentView.swift in Sources */,
 				43E645032953236800EAE968 /* TimestampDeltaCalculatorApp.swift in Sources */,
+				43E645122953238600EAE968 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

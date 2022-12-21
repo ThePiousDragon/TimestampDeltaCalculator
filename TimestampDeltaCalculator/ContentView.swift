@@ -8,16 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var input1 = ""
+    @State private var input2 = ""
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack {
+                TextField("Input 1", text: $input1)
+                TextField("Input 2", text: $input2)
+            }
+            .padding()
+
+            Button(action: {
+                // action to be performed when button is pressed
+            }) {
+                Text("Button")
+            }
+            .padding()
+
+            Text("Result")
+            .padding()
         }
-        .padding()
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
