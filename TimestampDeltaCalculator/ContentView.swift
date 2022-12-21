@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var input1 = ""
     @State private var input2 = ""
+    @State private var result = ""
 
     var body: some View {
         VStack {
@@ -20,13 +21,15 @@ struct ContentView: View {
             .padding()
 
             Button(action: {
-                // action to be performed when button is pressed
+                // Concatenate the strings from $input1 and $input2 and
+                // update the value of $result when the button is pressed
+                self.result = self.input1 + self.input2
             }) {
                 Text("Button")
             }
             .padding()
 
-            Text("Result")
+            Text(result)
             .padding()
         }
     }
