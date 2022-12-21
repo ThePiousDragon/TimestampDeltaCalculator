@@ -15,21 +15,21 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("Input 1", text: $input1)
-                TextField("Input 2", text: $input2)
+                TextField("Start timestamp", text: $input1)
+                TextField("End timestamp", text: $input2)
             }
             .padding()
 
             Button(action: {
                 // Concatenate the strings from $input1 and $input2 and
                 // update the value of $result when the button is pressed
-                self.result = self.input1 + self.input2
+                self.result = timeDelta(start: self.input1, end: self.input2)
             }) {
-                Text("Button")
+                Text("Calculate delta")
             }
             .padding()
 
-            Text(result)
+            TextEditor(text: $result)
             .padding()
         }
     }
